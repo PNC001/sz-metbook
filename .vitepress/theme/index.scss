@@ -1,0 +1,47 @@
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: rgba(122, 122, 122, 0.3);
+
+  // transition not work
+
+  &:window-inactive {
+    background-color: rgba(122, 122, 122, 0.3);
+  }
+
+  &:hover {
+    background-color: rgba(122, 122, 122, 0.7);
+  }
+
+  &:active {
+    background-color: rgba(122, 122, 122, 0.9);
+  }
+}
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #f5abb9 50%, #5bcffa 50%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}

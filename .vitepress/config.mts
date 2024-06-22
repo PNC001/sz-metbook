@@ -70,7 +70,12 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/MengXin001/sz-metbook' }
     ]
-  }
+  },
+  markdown: {
+    image: {
+      lazyLoading: true
+    }
+  },
 })
 
 function nav(): DefaultTheme.NavItem[] {
@@ -185,6 +190,18 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
           link: 'szmet/2023'
         },
         {
+          text: '1874年-1943年',
+          link: 'szmet/1874x'
+        },
+        {
+          text: '1952年-1978年',
+          link: 'szmet/1952x'
+        },
+        {
+          text: '1979年-2006年',
+          link: 'szmet/1979x'
+        },
+        {
           text: '预览内容（未完成整理）🚧 ',
           link: 'szmet/preview'
         },
@@ -203,7 +220,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         },
         {
           text: '台风',
-          collapsed: false,
+          collapsed: true,
           items: [
             {text: '2311 海葵', link:'report/typhoon/2311'},
           ] 
@@ -219,7 +236,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
     },
     {
       text: '实验性功能',
-      collapsed: false,
+      collapsed: true,
       items: [
         { text: '台风网', link: '' },
       ]

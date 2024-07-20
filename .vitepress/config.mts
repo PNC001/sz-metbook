@@ -92,6 +92,10 @@ function nav(): DefaultTheme.NavItem[] {
       text: '强对流过程',
       items: [
         {
+          text: '2018年',
+          link: '/szmet/2018'
+        },
+        {
           text: '2019年',
           link: '/szmet/2019'
         },
@@ -161,6 +165,8 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       text: '国家基本站概况',
       collapsed: true,
       items: [
+        { text: '深圳市国家气候观象台基本观测和拓展观测业务', link: 'data/operation' },
+        { text: '深圳市街道气象站代表站', link: 'data/streets-stations' },
         { text: '1991-2020年数据集', link: 'data/datasets-standard' },
         { text: '2020年', link: 'data/datasets-2020' },
       ]
@@ -169,6 +175,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       text: '全市主要天气过程',
       collapsed: false,
       items: [
+        {
+          text: '2018年',
+          link: 'szmet/2018'
+        },
         {
           text: '2019年',
           link: 'szmet/2019'

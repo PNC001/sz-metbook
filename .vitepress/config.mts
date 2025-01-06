@@ -47,7 +47,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'Released under the MIT License ｜ 基于 MIT 许可发布',
+      message: 'Released under the CC BY-NC-SA 4.0 License ｜ 基于 CC BY-NC-SA 4.0 许可发布',
       copyright: `Copyright © 2019-${new Date().getFullYear()} SZMET`
     },
 
@@ -114,6 +114,10 @@ function nav(): DefaultTheme.NavItem[] {
         {
           text: '2023年',
           link: '/szmet/2023'
+        },
+        {
+          text: '2024年',
+          link: '/szmet/2024'
         },
       ]
     },
@@ -198,6 +202,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         {
           text: '2023年',
           link: 'szmet/2023'
+        },
+        {
+          text: '2024年',
+          link: 'szmet/2024'
         },
         {
           text: '1874年-1943年',

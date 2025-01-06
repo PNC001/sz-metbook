@@ -5,7 +5,7 @@ title: 深圳气象录
 titleTemplate: Shenzhen Met
 
 hero:
-  name: Shenzhen Met
+  name: 🏮Shenzhen Met
   text: 深圳气象录
   tagline: 2019年至2024年全市气象过程记录
   actions:
